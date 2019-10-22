@@ -1,0 +1,48 @@
+.button {
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    margin: 0 1rem;
+  }
+
+  &:hover {
+    transform: translateY(-0.2rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    color: #333;
+
+    &::after {
+      transform: scaleX(1.2) scaleY(1.4);
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+
+  &--ghost {
+    border: 2px solid var(--color-secondary);
+    color: #fff;
+
+    &::after {
+      background-color: transparent;
+    }
+  }
+
+  &--green {
+    background-color: var(--color-secondary);
+    color: #333;
+  }
+  &:hover {
+    background-color: var(--color-secondary);
+  }
+}

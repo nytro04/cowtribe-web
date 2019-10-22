@@ -1,0 +1,47 @@
+//==== Navbar ==== //
+
+.logo {
+  height: 3.25rem;
+}
+
+.nav__link {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-secondary) !important;
+}
+
+.nav-link {
+  // color: rgba(0, 0, 0, 0.9) !important;
+  color: #fff !important;
+}
+
+//==== Header ==== //
+
+.header {
+  height: 100vh;
+  background-image: url(../assets/Frontpage.png);
+  background-size: cover;
+  background-position: top;
+
+  &__content {
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: center;
+    align-items: flex-end;
+    max-width: 65%;
+    margin: 0 auto;
+
+    &--hero {
+      font-size: 6rem;
+      font-weight: bolder !important;
+      color: #fff;
+    }
+
+    &--button {
+      align-self: center;
+      margin: 0 auto;
+    }
+  }
+}
