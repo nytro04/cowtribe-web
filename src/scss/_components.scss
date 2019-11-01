@@ -30,7 +30,7 @@
   }
 
   &--ghost {
-    border: 2px solid var(--color-secondary);
+    border: 2px solid var(--color-primary);
     color: #fff;
 
     &::after {
@@ -39,10 +39,14 @@
   }
 
   &--green {
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
     color: #333;
   }
   &:hover {
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
   }
+}
+
+.jumbotron {
+  background-color: var(--color-primary);
 }

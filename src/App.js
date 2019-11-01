@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Header from "./components/Header";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./scss/main.scss";
+import Home from "./components/Home";
 
 class App extends Component {
   render() {
@@ -9,7 +9,7 @@ class App extends Component {
       <div>
         <BrowserRouter>
           <Switch>
-            <Route exact path="/" component={Header} />
+            <Route exact path="/" component={Home} />
           </Switch>
         </BrowserRouter>
       </div>

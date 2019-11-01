@@ -5,7 +5,7 @@ import logo from "../assets/cowtribe-small-logo.png";
 class Navbar extends Component {
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
+      <nav className="navbar navbar-expand-sm navbar-light bg-transparent">
         <Link className="navbar-brand ml-4" to="/">
           <img className="logo" src={logo} alt="Cowtribe logo" /> Cowtribe
         </Link>
@@ -24,7 +24,7 @@ class Navbar extends Component {
         <div className="collapse navbar-collapse" id="cowtribe">
           <ul className="navbar-nav ml-auto mt-2 mt-lg-0 mr-4 nav__link">
             <li className="nav-item mr-4">
-              <Link className="nav-link" to="/our-tribe">
+              <Link className="nav-link active" to="/our-tribe">
                 Our Tribe
               </Link>
             </li>

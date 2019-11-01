@@ -1,6 +1,7 @@
 *:root {
   --color-primary: #418a49;
   --color-secondary: #eaec84;
+  --color-font-primary: #d4d4d4;
 }
 
 * {
@@ -15,6 +16,8 @@
 
 html {
   box-sizing: border-box;
+  line-height: 1.7;
+
   // font-size: 62.5%;
 }
 
