@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
-import Jumbotron from "./Jumbotron";
+import Jumbotron from "../Jumbotron";
 
 class Header extends Component {
   render() {
@@ -18,7 +18,7 @@ class Header extends Component {
               Learn More →
             </Link>
             <Link className="button button--ghost" to="/contact">
-              Request a demo →
+              How it works →
             </Link>
           </div>
         </div>

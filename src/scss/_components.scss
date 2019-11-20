@@ -47,6 +47,15 @@
   }
 }
 
-.jumbotron {
-  background-color: var(--color-primary);
+.card__how {
+  .card__how--img {
+    height: 10rem;
+  }
+
+  .card__how--header {
+    font-size: 1.6rem;
+    font-weight: 700;
+    // letter-spacing: 0.1rem;
+    margin: 2.5rem 0;
+  }
 }
