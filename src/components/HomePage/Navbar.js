@@ -6,8 +6,9 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand-sm navbar-light bg-transparent">
-        <Link className="navbar-brand ml-4" to="/">
-          <img className="logo" src={logo} alt="Cowtribe logo" /> Cowtribe
+        <Link className="navbar-brand ml-4 text-white" to="/">
+          <img className="img-fluid logo" src={logo} alt="Cowtribe logo" />{" "}
+          Cowtribe
         </Link>
         <button
           className="navbar-toggler"
