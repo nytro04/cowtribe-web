@@ -6,11 +6,6 @@ import stepThree from "../../assets/cowtribe-step3.png";
 
 class AboutSection extends Component {
   state = {
-    step: {
-      One: 1,
-      Two: 2,
-      Three: 3
-    },
     heading: {
       headingOne: "A Farmer Subscribes on Phone",
       headingTwo: "We Manage all Schedules",
@@ -33,19 +28,16 @@ class AboutSection extends Component {
 
           <div className="row">
             <HowCards
-              step={this.state.step.One}
               imgName={stepOne}
               heading={this.state.heading.headingOne}
               text={this.state.text.textOne}
             />
             <HowCards
-              step={this.state.step.Two}
               imgName={stepTwo}
               heading={this.state.heading.headingTwo}
               text={this.state.text.textTwo}
             />
             <HowCards
-              step={this.state.step.Three}
               imgName={stepThree}
               heading={this.state.heading.headingThree}
               text={this.state.text.textThree}
