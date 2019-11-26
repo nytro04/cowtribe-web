@@ -29,22 +29,67 @@
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   }
 
-  &--ghost {
-    border: 2px solid var(--color-primary);
-    color: #fff;
+  // &--ghost {
+  //   border: 2px solid var(--color-primary-light);
+  //   color: #fff;
+
+  //   &::after {
+  //     background-color: transparent;
+  //   }
+
+  //   &:hover {
+  //     background-color: var(--color-primary-light);
+  //   }
+  // }
+
+  &--green {
+    border: 2px solid #7ed56f;
+    color: #000;
+    background-color: #7ed56f;
 
     &::after {
-      background-color: transparent;
+      background-color: #7ed56f;
+    }
+
+    &:hover {
+      background-color: #7ed56f;
     }
   }
 
-  &--green {
-    background-color: var(--color-primary);
-    color: #333;
-  }
+  // &--white {
+  //   border: 2px solid #fff;
+  //   color: #000;
+  //   background-color: #fff;
+
+  //   &::after {
+  //     background-color: #fff;
+  //   }
+
+  //   &::hover {
+  //     border: 2px solid #fff;
+  //     background-color: #fff;
+  //   }
+  // }
+
+  // &--green {
+  //   background-color: var(--color-primary);
+  //   color: #333;
+  // }
+
+  &--white,
   &:hover {
-    background-color: var(--color-primary);
+    background-color: #fff;
+    color: #333;
+
+    &:hover {
+      background-color: #fff;
+      color: #333;
+    }
   }
+
+  // &:hover {
+  //   background-color: var(--color-primary);
+  // }
 }
 
 .card__how {
@@ -57,5 +102,170 @@
     font-weight: 700;
     // letter-spacing: 0.1rem;
     margin: 2.5rem 0;
+  }
+}
+
+// functionality
+.cus-card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 32.5rem;
+
+  &__side {
+    height: 32.5rem;
+    transition: all 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.15);
+
+    &--front {
+      background-color: #fff;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(
+          to right bottom,
+          var(--color-secondary-light),
+          var(--color-secondary-dark)
+        );
+      }
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          var(--color-primary-light),
+          var(--color-primary-dark)
+        );
+      }
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          var(--color-tertiary-light),
+          var(--color-tertiary-dark)
+        );
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  // front side styling
+  &__picture {
+    background-size: cover;
+    height: 14.3rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    &--1 {
+      background-image: url(../assets/cowtribe-1.jpg);
+    }
+    &--2 {
+      background-image: url(../assets/rsz_animal_vaccinations_gift_preview_1-1.jpg);
+    }
+    &--3 {
+      background-image: url(../assets/ubsxbmtkrmxsxyhaf5b9d2ad73d1b3.jpg);
+    }
+  }
+
+  &__heading {
+    font-size: 1.75rem;
+    font-weight: 500;
+    text-align: right;
+    text-transform: uppercase;
+    // color: #fff;
+    position: absolute;
+    top: 9.2rem;
+    right: 2rem;
+    width: 35%;
+  }
+
+  &__heading-span {
+    padding: 2px 1rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(255, 185, 0, 0.85),
+        rgba(255, 119, 48, 0.85)
+      );
+    }
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(126, 213, 111, 0.85),
+        rgba(40, 180, 133, 0.85)
+      );
+    }
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(41, 152, 255, 0.85),
+        rgba(86, 67, 250, 0.85)
+      );
+    }
+  }
+
+  &__details {
+    padding: 2rem;
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: 1rem;
+        padding: 10px;
+        text-transform: uppercase;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid #eee;
+        }
+      }
+    }
+  }
+
+  // BACK SIDE STYLING
+
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+
+  &__price-box {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 5rem;
+  }
+
+  &__price-only {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  &__price-value {
+    font-size: 3rem;
+    font-weight: 100;
   }
 }

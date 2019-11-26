@@ -4,11 +4,11 @@
   height: 3.25rem;
 }
 
-.nav__link {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--color-secondary) !important;
-}
+// .nav__link {
+//   font-size: 1.2rem;
+//   font-weight: 600;
+//   color: var(--color-secondary) !important;
+// }
 
 .nav-link {
   // color: rgba(0, 0, 0, 0.9) !important;
@@ -29,39 +29,18 @@
 
 //==== Header ==== //
 
-.display-4 {
-  color: #d4d4d4 !important;
+header {
+  min-height: 70vh;
 }
 
-.header {
-  height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../assets/cowtribe-1.jpg);
-  background-size: cover;
-  background-position: center;
+.header__left {
+  margin: auto 0;
+  text-align: center;
+}
 
-  &__content {
-    height: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    // justify-content: flex-end;
-    align-items: flex-end;
-    max-width: 50%;
-    margin: 0 5rem;
-    // margin: 0 auto;
-
-    &--hero {
-      font-size: 4rem;
-      font-weight: bolder !important;
-      // align-self: flex-end;
-      color: var(--color-font-primary);
-    }
-
-    &--button {
-      align-self: center;
-      margin: 0 auto;
-    }
-  }
+.display-3 {
+  font-size: 3.1rem;
+  font-weight: bolder;
 }
 
 .secondary-heading {
@@ -74,6 +53,7 @@
   background-image: linear-gradient(to right, #7ed56f, #28b485);
   -webkit-background-clip: text;
   color: transparent;
+  border-bottom: 2px solid #7ed56f;
 }
 
 .tertiary-heading {
@@ -85,4 +65,14 @@
   background-image: linear-gradient(to right, #7ed56f, #28b485);
   -webkit-background-clip: text;
   color: transparent;
+}
+
+.services {
+  h2 {
+    margin-bottom: 7rem;
+  }
+}
+
+.about {
+  background-color: #f7f7f7;
 }

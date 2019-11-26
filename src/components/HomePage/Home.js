@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Header from "./Header";
 import AboutSection from "./AboutSection";
+import ServicesHome from "./ServicesHome";
 
 class Home extends Component {
   render() {
@@ -8,6 +9,7 @@ class Home extends Component {
       <div>
         <Header />
         <AboutSection />
+        <ServicesHome />
       </div>
     );
   }

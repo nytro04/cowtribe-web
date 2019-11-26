@@ -22,11 +22,11 @@ class AboutSection extends Component {
   };
   render() {
     return (
-      <div className="container py-4">
-        <div className="text-center">
-          <h2 className="secondary-heading py-4">How Cowtribe Works</h2>
+      <div className="about">
+        <div className="container py-4 text-center">
+          <h2 className="secondary-heading py-4 mb-5">How Cowtribe Works</h2>
 
-          <div className="row">
+          <div className="row mb-5">
             <HowCards
               imgName={stepOne}
               heading={this.state.heading.headingOne}
