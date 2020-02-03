@@ -1,15 +1,21 @@
 import React, { Component } from "react";
 import Header from "./Header";
-import AboutSection from "./AboutSection";
+import HowItWorks from "./HowItWorks";
 import ServicesHome from "./ServicesHome";
+import AboutUs from "./AboutUs";
+import Contact from "./Contact";
+import Navbar from "./Navbar";
 
 class Home extends Component {
   render() {
     return (
       <div>
+        <Navbar />
         <Header />
-        <AboutSection />
+        <HowItWorks />
+        <AboutUs />
         <ServicesHome />
+        <Contact />
       </div>
     );
   }

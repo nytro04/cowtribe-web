@@ -50,7 +50,7 @@ class ServicesHome extends Component {
     return (
       <div className="services">
         <div className="container py-4 text-center">
-          <h2 className="secondary-heading py-4">Our Services</h2>
+          <h2 className="secondary-heading py-2 mb-5">Our Services</h2>
 
           <div className="row mb-5">
             <RotateCard

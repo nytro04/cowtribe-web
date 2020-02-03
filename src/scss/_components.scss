@@ -4,10 +4,11 @@
     display: inline-block;
     text-decoration: none;
     border-radius: 5rem;
+    color: #fff;
     font-weight: 600;
     letter-spacing: 1px;
-    font-size: 1rem;
-    padding: 1rem 3rem;
+    font-size: 0.8rem;
+    padding: 0.5rem 1.3rem;
     transition: all 0.2s;
     text-transform: uppercase;
     margin: 0 1rem;
@@ -16,7 +17,7 @@
   &:hover {
     transform: translateY(-0.2rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-    color: #333;
+    // color: #333;
 
     &::after {
       transform: scaleX(1.2) scaleY(1.4);
@@ -56,41 +57,46 @@
     }
   }
 
-  // &--white {
-  //   border: 2px solid #fff;
-  //   color: #000;
-  //   background-color: #fff;
+  &--white {
+    border: 2px solid #fff;
+    color: #000 !important;
+    background-color: #fff;
 
-  //   &::after {
-  //     background-color: #fff;
-  //   }
+    &::after {
+      background-color: #fff;
+    }
 
-  //   &::hover {
-  //     border: 2px solid #fff;
-  //     background-color: #fff;
-  //   }
-  // }
+    &:hover {
+      border: 2px solid #fff;
+      background-color: #fff;
+      color: #000 !important;
+    }
+  }
 
   // &--green {
   //   background-color: var(--color-primary);
   //   color: #333;
   // }
 
-  &--white,
-  &:hover {
-    background-color: #fff;
-    color: #333;
+  // &--white,
+  // &:hover {
+  //   background-color: #fff;
+  //   color: #333;
 
-    &:hover {
-      background-color: #fff;
-      color: #333;
-    }
-  }
+  //   &:hover {
+  //     background-color: #fff;
+  //     color: #333;
+  //   }
+  // }
 
   // &:hover {
   //   background-color: var(--color-primary);
   // }
 }
+
+// .header__button {
+//   dis
+// }
 
 .card__how {
   .card__how--img {

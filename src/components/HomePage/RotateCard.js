@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const RotateCard = ({ name, details, price, number }) => {
   return (
-    <div className="col-md-4">
+    <div className="col-md-4 mb-5">
       <div className="cus-card">
         <div className="cus-card__side cus-card__side--front">
           <div className={`cus-card__picture cus-card__picture--${number}`}>
