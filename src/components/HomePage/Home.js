@@ -5,6 +5,7 @@ import ServicesHome from "./ServicesHome";
 import AboutUs from "./AboutUs";
 import Contact from "./Contact";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 class Home extends Component {
   render() {
@@ -16,6 +17,7 @@ class Home extends Component {
         <AboutUs />
         <ServicesHome />
         <Contact />
+        <Footer />
       </div>
     );
   }
