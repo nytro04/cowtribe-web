@@ -243,9 +243,13 @@
         padding: 10px;
         text-transform: uppercase;
 
-        &:not(:last-child) {
-          border-bottom: 1px solid #eee;
+        i {
+          color: #7ed56f;
         }
+
+        // &:not(:last-child) {
+        //   border-bottom: 1px solid #eee;
+        // }
       }
     }
   }

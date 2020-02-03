@@ -18,10 +18,22 @@ const RotateCard = ({ name, details, price, number }) => {
           </h4>
           <div className="cus-card__details">
             <ul>
-              <li>{details[0]}</li>
-              <li>{details[1]}</li>
-              <li>{details[2]}</li>
-              <li>{details[3]}</li>
+              <li>
+                <i class="fas fa-check mr-3 "></i>
+                {details[0]}
+              </li>
+              <li>
+                <i class="fas fa-check mr-3"></i>
+                {details[1]}
+              </li>
+              <li>
+                <i class="fas fa-check mr-3"></i>
+                {details[2]}
+              </li>
+              <li>
+                <i class="fas fa-check mr-3"></i>
+                {details[3]}
+              </li>
             </ul>
           </div>
         </div>
