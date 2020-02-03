@@ -44,15 +44,15 @@ class Contact extends Component {
               <h3 className="mb-4 text-white">Contact Info</h3>
               <p>
                 <i className="fas fa-map-marker-alt mr-3 text-white"></i>
-                Spintex Road, Kotobabi, Accra-Ghana
+                2nd Floor Yamusah Plaza 212 Water Works Road, Tamale Ghana
               </p>
               <Link to="mailto:">
                 <i className="fas fa-envelope mr-3 mb-2"></i>
-                info@cowtribe.com
+                info@34.226.239.221
               </Link>
               <p>
                 <i className="fas fa-phone mr-3"></i>
-                0200 000 000
+                +233203905658
               </p>
 
               <div className="contact__icons pt-4">
